@@ -12,5 +12,5 @@ try:
     mc.play()
     time.sleep(20)
     mc.stop()
-except:
-    print("Nenhum Chromecast encontrado na rede.")
+except Exception as e:
+    print(repr(e))
